@@ -118,7 +118,7 @@ input,button{
     margin-right: 5px;
 }
 .search input{
-    width: 250px;
+    width: 240px;
 }
 .price i{
     width:18px;
@@ -142,16 +142,51 @@ input,button{
     margin: 0 10px;
 }
 .goods-items{
+    height: 30px;
+}
+.opt{
     position: relative;
 }
+.goods-items .down{
+    top: 13px;
+}
 .items-content{
-    position: absolute;
-    width: 250px;
-    height: 344px;
-    left: 0;
-    top: 0;
-    background-color: red;
+    width: 230px;
+    height: 322px;
+    margin-left: 56px;
     z-index: 99;
+    position: relative;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+.item-search input{
+    width: 220px;
+    margin-bottom: 10px;
+}
+.items-content{
+    line-height: 30px;
+    display: none;
+}
+.items-content label{
+    margin-right: 10px;
+}
+.all-item{
+    padding-left: 15px;
+    position: relative;
+}
+.all-item .down,.items .down{
+    left: -15px;
+    top: 12px;
+}
+.items{
+    padding-left: 35px;
+    display: none;
+}
+.items ul{
+    padding-left: 25px;
+    display: none;
 }
 
 /* 表格 */
@@ -197,10 +232,15 @@ td .dot{
     top: 50%;
     left: 50%;
     transform: translate(0,-50%);
+    text-align: left;
 }
 
 .check-box input{
     right: 0;
     vertical-align: middle;
+}
+
+#book-fail .modal-header{
+    border: 0;
 }
 

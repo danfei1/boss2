@@ -32,9 +32,16 @@ $(function() {
 })
 
 // 显示删除弹框
-function modaldemo(){
+function modalDelete(){
     $("#modal-demo").modal("show");
 }
+
+// 显示上架失败弹框
+function bookFail(){
+    $("#book-fail").modal("show");
+}
+
+
 
 // 多选框
 $(function(){
@@ -43,6 +50,18 @@ $(function(){
         radioClass: 'iradio-blue',
         increaseArea: '20%'
 })});
+
+// 显示商品分类
+$(".xiala div").click(function(){
+    $(".items-content").slideToggle();
+});
+$(".xiala-all").click(function(){
+    $(".items").slideToggle();
+});
+$(".xiala-one").click(function(){
+    $(".items ul").slideToggle();
+});
+
 
 
 // 富文本

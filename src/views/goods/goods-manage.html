@@ -50,6 +50,25 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 上架失败 -->
+            <div id="book-fail" class="modal fade" tabindex="-1" role="dialog" aria-spanledby="myModalspan" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                               上架失败！
+                            </p>
+                            <p>
+                                当前商品不足，请先补充库存。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>               
             
             <div id="tab_demo" class="HuiTab">
                 <div class="tabBar clearfix">
@@ -70,60 +89,73 @@
                                 <i class="left"></i><input type="text">
                             </div>
                             <div class="goods-items f-l">
-                                <span class="f-l">商品类目</span>
-                                <input class="f-l" type="text" placeholder="全部类目">
-                                <div class="down"></div>
+                                <div class="opt xiala">
+                                    <span>商品类目</span>
+                                    <input type="text" placeholder="全部类目">
+                                    <div class="down"></div>
+                                </div>
                                 <div class="items-content">
                                     <div class="item-search">
                                         <input type="text">
                                         <i></i>
                                     </div>
-                                    <div class="all-item skin-minimal">
-                                        <div class="down"></div>
-                                        <label for="checkbox-1" class="f-l">全部类目</label>
-                                        <div class="check-box f-l">
-                                            <input type="checkbox" id="checkbox-1">
-                                        </div>
+                                    <div class="all-item">
+                                        <div class="skin-minimal opt cl">
+                                            <div class="down xiala-all"></div>
+                                            <label for="checkbox-1" class="f-l">全部类目</label>
+                                            <div class="check-box f-l">
+                                                <input type="checkbox" id="checkbox-1">
+                                            </div>  
+                                        </div>                                          
                                     </div>
                                     <ul class="items">
                                         <li>
-                                            <div class="down"></div>
-                                            <label for="checkbox-1" class="f-l">食物</label>
-                                            <div class="check-box f-l">
-                                                <input type="checkbox" id="checkbox-1">
+                                            <div class="skin-minimal opt cl">
+                                                <div class="down xiala-one"></div>
+                                                <label for="checkbox-1" class="f-l">食物</label>
+                                                <div class="check-box f-l">
+                                                    <input type="checkbox" id="checkbox-1">
+                                                </div>                                         
                                             </div>
                                             <ul>
                                                 <li>
-                                                    <label for="checkbox-1" class="f-l">饼干</label>
-                                                    <div class="check-box f-l">
-                                                        <input type="checkbox" id="checkbox-1">
-                                                    </div>    
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">饼干</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>             
+                                                    </div>
                                                 </li>
                                                 <li>
-                                                    <label for="checkbox-1" class="f-l">进口食物</label>
-                                                    <div class="check-box f-l">
-                                                        <input type="checkbox" id="checkbox-1">
-                                                    </div>    
-                                                </li>                                                
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">进口食物</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>                           
+                                                    </div>   
+                                                </li>                                         
                                             </ul>                                         
                                         </li>
                                         <li>
-                                            <div class="down"></div>
-                                            <label for="checkbox-1" class="f-l">手机</label>
-                                            <div class="check-box f-l">
-                                                <input type="checkbox" id="checkbox-1">
+                                            <div class="skin-minimal opt cl">
+                                                <div class="down xiala-one"></div>
+                                                <label for="checkbox-1" class="f-l">手机</label>
+                                                <div class="check-box f-l">
+                                                    <input type="checkbox" id="checkbox-1">
+                                                </div>                                      
                                             </div>
                                             <ul>
                                                 <li>
-                                                    <label for="checkbox-1" class="f-l">手机配件</label>
-                                                    <div class="check-box f-l">
-                                                        <input type="checkbox" id="checkbox-1">
-                                                    </div>    
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">手机配件</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>  
+                                                    </div>  
                                                 </li>                                         
                                             </ul>                                         
                                         </li>                                        
                                     </ul>
-                                    <div class="down"></div>
                                 </div>
                             </div>
                             <div class="screen f-l">
@@ -161,8 +193,8 @@
                                     <td>199999</td>
                                     <td>2019-03-06 09:13:20</td>
                                     <td class="f-14 td-manage">
-                                        <div class="btn radius size-S bthover">编辑</div>
-                                        <div class="btn radius size-S bthover">推广</div>
+                                        <div class="btn radius size-S">编辑</div>
+                                        <div class="btn radius size-S">推广</div>
                                     </td>
                                 </tr>
                                 <tr class="text-c">
@@ -180,8 +212,8 @@
                                     <td>199999</td>
                                     <td>2019-03-06 09:13:20</td>
                                     <td class="f-14 td-manage">
-                                        <div class="btn radius size-S bthover">编辑</div>
-                                        <div class="btn radius size-S bthover">推广</div>
+                                        <div class="btn radius size-S">编辑</div>
+                                        <div class="btn radius size-S">推广</div>
                                     </td>
                                 </tr>                                
                             </tbody>
@@ -207,22 +239,90 @@
                 </div>
                 <div class="tabCon">
                     <div class="search cl">
-                        <div class="text-l f-l">
+                        <div class="search-left f-l">
                             <button name="" id="" class="btn btn-primary" type="submit">添加</button>
                         </div>
-                        <div class="price f-l">
-                            <span>价格</span>
-                            <input type="text">
-                            <span>-</span>
-                            <input type="text">
-                        </div>
-                        <div class="goods-items f-l">
-                            <span>商品类目</span>
-                            <input type="text" placeholder="全部类目">
-                        </div>
-                        <div class="screen f-l">
-                            <input type="text" placeholder="商品名称、商品编号">
-                            <button name="" id="" class="btn btn-primary">筛选</button>
+                            <div class="search-right">
+                            <div class="price f-l">
+                                <span>价格</span>
+                                <i class="left"></i><input type="text">
+                                <span>-</span>
+                                <i class="left"></i><input type="text">
+                            </div>
+                            <div class="goods-items f-l">
+                                <div class="opt xiala">
+                                    <span>商品类目</span>
+                                    <input type="text" placeholder="全部类目">
+                                    <div class="down"></div>
+                                </div>
+                                <div class="items-content">
+                                    <div class="item-search">
+                                        <input type="text">
+                                        <i></i>
+                                    </div>
+                                    <div class="all-item">
+                                        <div class="skin-minimal opt cl">
+                                            <div class="down xiala-all"></div>
+                                            <label for="checkbox-1" class="f-l">全部类目</label>
+                                            <div class="check-box f-l">
+                                                <input type="checkbox" id="checkbox-1">
+                                            </div>  
+                                        </div>                                          
+                                    </div>
+                                    <ul class="items">
+                                        <li>
+                                            <div class="skin-minimal opt cl">
+                                                <div class="down xiala-one"></div>
+                                                <label for="checkbox-1" class="f-l">食物</label>
+                                                <div class="check-box f-l">
+                                                    <input type="checkbox" id="checkbox-1">
+                                                </div>                                         
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">饼干</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>             
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">进口食物</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>                           
+                                                    </div>   
+                                                </li>                                         
+                                            </ul>                                         
+                                        </li>
+                                        <li>
+                                            <div class="skin-minimal opt cl">
+                                                <div class="down xiala-one"></div>
+                                                <label for="checkbox-1" class="f-l">手机</label>
+                                                <div class="check-box f-l">
+                                                    <input type="checkbox" id="checkbox-1">
+                                                </div>                                      
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">手机配件</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>  
+                                                    </div>  
+                                                </li>                                         
+                                            </ul>                                         
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="screen f-l">
+                                <input type="text" placeholder="商品名称、商品编号">
+                            </div>
+                            <button class="btn btn-primary f-l">筛选</button>  
                         </div>                        
                     </div>
                     <div class="tit">商品管理用于对商品组合、售价、库存、以及发布等管理</div>
@@ -231,11 +331,11 @@
                             <thead>
                                 <tr class="text-c">
                                     <th width="50">排序</th>
-                                    <th width="50">商品名</th>
-                                    <th width="50">价格</th>
-                                    <th width="50">库存<i></i></th>
-                                    <th width="50">创建时间</th>
-                                    <th width="50">操作</th>
+                                    <th width="150">商品名</th>
+                                    <th width="100">价格</th>
+                                    <th width="50" class="stock">库存<i></i></th>
+                                    <th width="100">创建时间</th>
+                                    <th width="100">操作</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -245,17 +345,17 @@
                                         <div class="btn radius">1</div>
                                     </td>
                                     <td>
-                                        <img class="f-l" src="../../images/200x150.jpg" alt="">
-                                        <div class="product-name f-l">
+                                        <img class="f-l" src="../../images/200x150.jpg" height="157" width="210" alt="">
+                                        <span class="product-name">
                                             银杏酒 银杏贡酒45度 500ml 4瓶装
-                                        </div>
+                                        </span>
                                     </td>
                                     <td>3000 积分+¥100.00</td>
                                     <td>库存不足</td>
                                     <td>2019-03-06 09:13:20</td>
                                     <td class="f-14 td-manage">
-                                        <div class="btn radius size-S bthover">编辑</div>
-                                        <div class="btn radius size-S bthover">推广</div>
+                                        <div class="btn radius size-S">编辑</div>
+                                        <div class="btn radius size-S">推广</div>
                                     </td>
                                 </tr>
                                 <tr class="text-c">
@@ -266,15 +366,15 @@
                                     <td>
                                         <img src="../../images/200x150.jpg" alt="" class="f-l">
                                         <div class="product-name f-l">
-                                            银杏酒 银杏贡酒45度 500ml 4瓶装  啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+                                            银杏酒 银杏贡酒45度 500ml 4瓶装  啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
                                         </div>
                                     </td>
                                     <td>3000 积分+¥100.00</td>
                                     <td>库存不足</td>
                                     <td>2019-03-06 09:13:20</td>
                                     <td class="f-14 td-manage">
-                                        <div class="btn radius size-S bthover">编辑</div>
-                                        <div class="btn radius size-S bthover">推广</div>
+                                        <div class="btn radius size-S">编辑</div>
+                                        <div class="btn radius size-S">推广</div>
                                     </td>
                                 </tr>                                
                             </tbody>
@@ -297,25 +397,93 @@
                             <li class="no-border">总数85</li>
                         </ul>
                     </div>
-                </div> 
+                </div>
                 <div class="tabCon">
                     <div class="search cl">
-                        <div class="text-l f-l">
+                        <div class="search-left f-l">
                             <button name="" id="" class="btn btn-primary" type="submit">添加</button>
                         </div>
-                        <div class="price f-l">
-                            <span>价格</span>
-                            <input type="text">
-                            <span>-</span>
-                            <input type="text">
-                        </div>
-                        <div class="goods-items f-l">
-                            <span>商品类目</span>
-                            <input type="text" placeholder="全部类目">
-                        </div>
-                        <div class="screen f-l">
-                            <input type="text" placeholder="商品名称、商品编号">
-                            <button name="" id="" class="btn btn-primary">筛选</button>
+                            <div class="search-right">
+                            <div class="price f-l">
+                                <span>价格</span>
+                                <i class="left"></i><input type="text">
+                                <span>-</span>
+                                <i class="left"></i><input type="text">
+                            </div>
+                            <div class="goods-items f-l">
+                                <div class="opt xiala">
+                                    <span>商品类目</span>
+                                    <input type="text" placeholder="全部类目">
+                                    <div class="down"></div>
+                                </div>
+                                <div class="items-content">
+                                    <div class="item-search">
+                                        <input type="text">
+                                        <i></i>
+                                    </div>
+                                    <div class="all-item">
+                                        <div class="skin-minimal opt cl">
+                                            <div class="down xiala-all"></div>
+                                            <label for="checkbox-1" class="f-l">全部类目</label>
+                                            <div class="check-box f-l">
+                                                <input type="checkbox" id="checkbox-1">
+                                            </div>  
+                                        </div>                                          
+                                    </div>
+                                    <ul class="items">
+                                        <li>
+                                            <div class="skin-minimal opt cl">
+                                                <div class="down xiala-one"></div>
+                                                <label for="checkbox-1" class="f-l">食物</label>
+                                                <div class="check-box f-l">
+                                                    <input type="checkbox" id="checkbox-1">
+                                                </div>                                         
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">饼干</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>             
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">进口食物</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>                           
+                                                    </div>   
+                                                </li>                                         
+                                            </ul>                                         
+                                        </li>
+                                        <li>
+                                            <div class="skin-minimal opt cl">
+                                                <div class="down xiala-one"></div>
+                                                <label for="checkbox-1" class="f-l">手机</label>
+                                                <div class="check-box f-l">
+                                                    <input type="checkbox" id="checkbox-1">
+                                                </div>                                      
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="skin-minimal opt cl">
+                                                        <label for="checkbox-1" class="f-l">手机配件</label>
+                                                        <div class="check-box f-l">
+                                                            <input type="checkbox" id="checkbox-1">
+                                                        </div>  
+                                                    </div>  
+                                                </li>                                         
+                                            </ul>                                         
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="screen f-l">
+                                <input type="text" placeholder="商品名称、商品编号">
+                            </div>
+                            <button class="btn btn-primary f-l">筛选</button>  
                         </div>                        
                     </div>
                     <div class="tit">商品管理用于对商品组合、售价、库存、以及发布等管理</div>
@@ -324,11 +492,11 @@
                             <thead>
                                 <tr class="text-c">
                                     <th width="50">排序</th>
-                                    <th width="50">商品名</th>
-                                    <th width="50">价格</th>
-                                    <th width="50">库存<i></i></th>
-                                    <th width="50">创建时间</th>
-                                    <th width="50">操作</th>
+                                    <th width="150">商品名</th>
+                                    <th width="100">价格</th>
+                                    <th width="50" class="stock">库存<i></i></th>
+                                    <th width="100">创建时间</th>
+                                    <th width="100">操作</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -338,18 +506,18 @@
                                         <div class="btn radius">1</div>
                                     </td>
                                     <td>
-                                        <img class="f-l" src="../../images/200x150.jpg" alt="">
-                                        <div class="product-name f-l">
+                                        <img class="f-l" src="../../images/200x150.jpg" height="157" width="210" alt="">
+                                        <span class="product-name">
                                             银杏酒 银杏贡酒45度 500ml 4瓶装
-                                        </div>
+                                        </span>
                                     </td>
                                     <td>3000 积分+¥100.00</td>
                                     <td>库存不足</td>
                                     <td>2019-03-06 09:13:20</td>
                                     <td class="f-14 td-manage">
-                                        <div class="btn radius size-S bthover">编辑</div>
-                                        <div class="btn radius size-S bthover">上架</div>
-                                        <div class="btn radius size-S bthover" onClick="modaldemo()">删除</div>
+                                        <div class="btn radius size-S">编辑</div>
+                                        <div class="btn radius size-S" onClick="bookFail()">上架</div>
+                                        <div class="btn radius size-S" onClick="modalDelete()">删除</div>
                                     </td>
                                 </tr>
                                 <tr class="text-c">
@@ -360,16 +528,16 @@
                                     <td>
                                         <img src="../../images/200x150.jpg" alt="" class="f-l">
                                         <div class="product-name f-l">
-                                            银杏酒 银杏贡酒45度 500ml 4瓶装  啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+                                            银杏酒 银杏贡酒45度 500ml 4瓶装  啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
                                         </div>
                                     </td>
                                     <td>3000 积分+¥100.00</td>
-                                    <td>19999</td>
+                                    <td>9999</td>
                                     <td>2019-03-06 09:13:20</td>
                                     <td class="f-14 td-manage">
-                                        <div class="btn radius size-S bthover">编辑</div>
-                                        <div class="btn radius size-S bthover">上架</div>
-                                        <div class="btn radius size-S bthover" onClick="modaldemo()">删除</div>
+                                        <div class="btn radius size-S">编辑</div>
+                                        <div class="btn radius size-S">上架</div>
+                                        <div class="btn radius size-S" onClick="modalDelete()">删除</div>
                                     </td>
                                 </tr>                                
                             </tbody>
@@ -392,7 +560,7 @@
                             <li class="no-border">总数85</li>
                         </ul>
                     </div>
-                </div>                                
+                </div>                                                               
             </div>
         </div>
     </div>
