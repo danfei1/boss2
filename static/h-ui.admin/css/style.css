@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+/* 头部导航栏 */
+.navbar .logo {
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+}
+.navbar span.logo{
+    margin-right: 50px;
+}
+.navbar-nav>ul>li{
+    line-height: 80px;
+}
+.navbar-nav>ul>li>a:hover{
+    background-color: transparent;
+}
+.header-nav>ul>li>a:hover{
+	border-bottom: 3px solid #fff;
+}
+#Hui-userbar a{
+	font-size: 12px;
+}
+
+/* 侧边 */
+.Hui-aside {
+	top: 80px;
+}
+
+/* section*/
+.Hui-article-box {
+	top: 80px;
+}
+.content{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.details li{
+	width: 30%;
+	height: 80px;
+	float: left;
+	background-color: red;
+	padding: 10px;
+	color: #fff;
+	margin-right:20px;
+	margin-bottom: 20px;
+}
+
+.Hui-tabNav{
+	height: 0;
+	width: 0;
+}
+#iframe_box{
+	margin-top: -33px;
+}

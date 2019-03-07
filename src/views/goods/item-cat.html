@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/goods/item-cat.css">
+    <title>商品类目</title>
+</head>
+
+<body>
+    <div class="page page1" id="pageManage">
+        <nav class="breadcrumb"> <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            商品
+            <span class="c-gray en">&gt;</span>
+            商品类目
+        </nav>
+        <div class="page-container">
+            <!-- 编辑一级目录弹框 -->
+           <div id="extensionFir" class="modal fade extension" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <h3 class="modal-title">编辑一级类目</h3>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                           <i>*&nbsp;</i>
+                            <span>类目名称</span>
+                            <input type="text" placeholder="手机">
+                            <span class="gray">最多可输入6个文字</span>
+                            <button class="btn">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 编辑二级目录弹框 -->
+           <div id="extensionSec" class="modal fade extension" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <h3 class="modal-title">编辑二级类目</h3>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <i>*&nbsp;</i>
+                            <span>类目名称</span>
+                            <input type="text" placeholder="手机">
+                            <span class="gray">最多可输入6个文字</span>
+                            <button class="btn">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            
+            <!-- 添加一级目录弹框 -->
+            <div id="addFir" class="modal fade extension" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <h3 class="modal-title">添加一级类目</h3>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                           <i>*&nbsp;</i>
+                           <span>类目名称</span>
+                           <input type="text">
+                           <span class="gray">最多可输入6个文字</span>
+                           <button class="btn">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+            <!-- 添加二级目录弹框 -->
+           <div id="addSec" class="modal fade extension" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <h3 class="modal-title">添加二级类目</h3>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                           <i>*&nbsp;</i>
+                           <span>类目名称</span>
+                           <input type="text">
+                           <span class="gray">最多可输入6个文字</span>
+                           <button class="btn">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <!-- 删除弹框 -->
+            <div id="modalDelete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                确定删除?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn radius" data-dismiss="modal" aria-hidden="true">否</button>
+                            <button class="btn btn-primary">是</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search">
+                <div class="text-l f-l">
+                    <button name="" id="" class="btn btn-primary" type="submit" onClick="addFir()">添加</button>
+                </div>
+                <div class="text-r f-r">
+                    <input type="text" name="" id="" placeholder="商品类目" style="width:250px" class="input-text">
+                    <button name="" id="" class="btn btn-primary" type="submit">搜索</button>
+                </div>
+            </div>
+            <div class="tit">
+                管理商城商品目录，可添加一级、二级类目。
+            </div>
+            <div class="mt-10">
+                <table class="table table-border table-bg table-hover table-responsive">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="150">类目名称</th>
+                            <th width="40">商品数量</th>
+                            <th width="80">创建时间</th>
+                            <th width="150">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-c">
+                            <td class="item-name">手机</td>
+                            <td>8</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="addSec()">添加</div>
+                                <div class="btn radius size-S" onClick="extensionFir()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr> 
+                        <tr class="text-c">
+                            <td class="item-name"><span class="plus" onClick="branch(this)">+</span>美妆</td>
+                            <td>11</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="addSec()">添加</div>
+                                <div class="btn radius size-S" onClick="extensionFir()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>
+                        <tr class="text-c branch">
+                            <td class="item-name"><div class="tree"></div>护肤</td>
+                            <td>8</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="extensionSec()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>
+                        <tr class="text-c branch">
+                            <td class="item-name"><div class="tree"></div>香水</td>
+                            <td>3</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="extensionSec()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr> 
+                        <tr class="text-c">
+                            <td class="item-name"><span class="plus" onClick="branch(this)">+</span>美妆</td>
+                            <td>11</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="addSec()">添加</div>
+                                <div class="btn radius size-S" onClick="extensionFir()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>
+                        <tr class="text-c branch">
+                            <td class="item-name"><div class="tree"></div>护肤</td>
+                            <td>8</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="extensionSec()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>
+                        <tr class="text-c branch">
+                            <td class="item-name"><div class="tree"></div>香水</td>
+                            <td>3</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="extensionSec()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr> 
+                        <tr class="text-c">
+                            <td class="item-name">手机</td>
+                            <td>8</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="addSec()">添加</div>
+                                <div class="btn radius size-S" onClick="extensionFir()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>                                                               
+                        <tr class="text-c">
+                            <td class="item-name"><span class="plus" onClick="branch(this)">+</span>美妆</td>
+                            <td>11</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="addSec()">添加</div>
+                                <div class="btn radius size-S" onClick="extensionFir()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>
+                        <tr class="text-c branch">
+                            <td class="item-name"><div class="tree"></div>护肤</td>
+                            <td>8</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S"  onClick="extensionSec()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>
+                        <tr class="text-c branch">
+                            <td class="item-name"><div class="tree"></div>香水</td>
+                            <td>3</td>
+                            <td>2019-2-27 16:34:42</td>
+                            <td class="f-14 td-manage">
+                                <div class="btn radius size-S" onClick="extensionSec()">编辑</div>
+                                <div class="btn radius size-S" onClick="modalDelete()">删除</div>
+                            </td>
+                        </tr>                                                                                                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <div class="export"><i class="Hui-iconfont">&#xe67f;</i>批量导出</div>
+                <ul>
+                    <li><</li>
+                    <li class="current">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li class="no-border">...</li>
+                    <li>50</li>
+                    <li>></li>
+                    <li>10/页 <i class="Hui-iconfont">&#xe67f;</i></li>
+                    <li class="no-border">Goto</li>
+                    <li><input type="text" placeholder="8"></li>
+                    <li class="no-border">总数85</li>
+                </ul>
+            </div>
+        </div>        
+    </div>     
+    <script type="text/javascript" src="../../../lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../lib/layer/2.4/layer.js"></script>
+    <script type="text/javascript" src="../../../static/h-ui/js/H-ui.min.js"> </script> 
+    <script type="text/javascript" src="../../../static/h-ui.admin/js/H-ui.admin.js"></script>
+    <!--/_footer 作为公共模版分离出去-->
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="../../js/goods/item-cat.js"></script>
+</body>
+
+</html>

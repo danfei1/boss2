@@ -1,0 +1,678 @@
+/* + */
+.add1{
+    height: 130px;
+    width: 130px;
+    border: 1px dashed #999;
+    text-align: center;
+    line-height: 130px;
+    cursor: pointer;
+}
+.blue{
+    color: #008EE5;
+}
+
+.btn-primary {
+        background-color: #008EE5;
+        font-size: 14px;
+        color: #fff;
+        padding:0 25px;
+        border-radius: 5px;
+        height: 30px;
+        line-height: 30px;
+}
+/* 下拉 */
+.down{
+    width: 12px;
+    height: 7px;
+    background: url("../../images/xiala.jpg") no-repeat;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
+}
+/* 滑动条 */
+#bl{
+    width: 160px;
+    margin: 10px auto;
+    border-top: 1px solid #008EE5;
+    border-bottom: 1px solid #008EE5;
+    cursor: pointer;
+}
+#bl .bl-value{
+    position: absolute;
+    top: -33px;
+    left: -3px;
+    width: 24px;
+    height: 28px;
+    background: url("../../images/11.png") no-repeat;
+    line-height: 25px;
+    color: #fff;
+}
+#move{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #008EE5;
+}
+
+input{
+    border: 0;
+}
+
+/* 表格 */
+table img {
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+.table tbody tr{
+    height: 100px;
+}
+.table .text-c th{
+    background-color: #F8F8F8;
+}
+.table tbody img{
+    margin: auto;
+}
+td{
+    position: relative;
+}
+td .dot{
+    position: absolute;
+    width: 18px;
+    height: 54px;
+    left: 10px;
+    top: 50%;
+    margin-top: -27px;
+    background: url("../../images/dot.jpg") no-repeat;
+}
+.tabBar {
+    border: none;
+}
+.tabBar span{
+    background-color: #fff;
+}
+
+.tabBar span.current {
+    border-bottom: 3px solid #008EE5;
+    background-color: #fff;
+    color: #008EE5;
+}
+.tabCon {
+    padding-top:20px;
+}
+.tabCon .tit{
+    padding-top: 10px;
+}
+/* 导航页面 */
+.navigation .tit {
+    color:#333;
+    padding: 0 0 10px 15px;
+}
+.navigation .slider{
+    margin-top: 4px;
+}
+.navigation .range{
+    margin-top: 40px;
+}
+.navigation .add1{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.tag ul li{
+    width: 50px;
+    line-height: 24px;
+    margin-top: 3px;
+    margin-right: 5px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+    cursor: move;
+}
+.tag ul li .arrow{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    cursor: pointer;
+}
+.tag .btn{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.tag span{
+    margin-top: 10px;
+}
+.navigation .row input{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 5px;
+    line-height: 30px;
+    margin-right: 10px;    
+}
+.nav-name input{
+    width: 66px;
+    width: 170px;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link input{
+    width: 170px;
+}
+.navigation .btn-set{
+   margin: 10px 0 40px 25px;
+}
+
+.arrow-right{
+    position: absolute;
+    top: 9px;
+    left: 245px;
+    background: url("../../images/arrow-right.jpg") no-repeat;
+    width: 8px;
+    height: 13px;
+    cursor: pointer;
+}
+
+/*  */
+
+.content_left {
+    background-color: #999;
+    height: 200px;
+}
+.content_left_item {
+    height: 50px;
+    padding:5px 0;
+}
+
+.bthover:hover{
+    color: #008EE5;
+    border-color: #008EE5;
+}
+/* 删除弹出框 */
+.modal-open .modal {
+    overflow-y: hidden;
+}        
+.modal-dialog {
+    width: 300px;
+    margin: 300px auto;
+}
+#modal-demo .modal-header {
+    border-bottom: 0;
+}
+.modal-header .close {
+    right: 10px;
+    top: 0px;
+}
+.modal-body{
+    text-align: center;
+}
+.modal-footer {
+    text-align: left;
+    background-color: #fff;
+    border-top: 0;
+    padding-left: 66px;
+}
+.modal-footer .btn{
+   width: 80px;
+}
+.modal-footer .btn-primary{
+    border-radius: 4px;
+} 
+/* page页设置 */
+.page2{
+    display: none;
+}
+.page1{
+    display: block;
+}
+/* 添加页 */
+.page2 .page-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.page2 .page-container .row{
+    margin: 20px 0;
+}
+.page2 .page-container input{
+    margin-right: 10px;
+}
+.page2 .page-container i{
+    color: red;
+    margin-right: 10px;
+}
+.page2 .page-container span{
+    margin-right: 10px;
+}        
+.page2 .set-pic{
+    background-color: #eee;
+    padding: 20px;
+}
+.page2 .add{
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    color: #ccc;
+    line-height: 70px;
+    border: 1px dashed #ccc;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.inpt-title{
+    width: 292px;
+    height: 30px;
+    border: 1px solid #eee;
+    padding: 0 5px;
+}
+.gray{
+    color: #aaa;
+    font-size: 12px;
+} 
+.row-link{
+    position: relative;
+}
+.inpt-link{
+    width: 170px;
+    height: 30px;
+    border: 1px solid #EEE;
+    padding: 0 5px;
+}
+.row-link .arrow{
+    position: absolute;
+    top: 5px;
+   right: 226px;
+}
+.set-btn{
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 410px;
+}
+.set-btn .btn{
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.set-btn .set{
+    color: #fff;
+}
+/* 我的文件 图片页 */
+#modal-add .modal-title{
+    padding: 0;
+}
+#modal-add .modal-body{
+    padding: 10px;
+}
+#modal-add .left{
+    margin: 0 5px;
+}
+#modal-add .left .group{
+    padding: 10px;
+    background-color: #eee;
+    font-size: 12px;
+    color: #61BCF8;
+    height: 213px;
+}
+#modal-add .left .head{
+    color: #61BCF8;
+    padding: 10px 10px; 
+    border-top: 1px solid #eee;   
+}
+#modal-add .group-row{
+    margin: 10px 0;
+}
+#modal-add .left .btn-primary{
+    margin-left: -90px;
+    height: 25px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+#modal-add .modal-dialog {
+    width: 970px;
+    margin-top: 100px;
+}
+#modal-add .modal-content{
+    height: 640px;
+}
+#modal-add .modal-dialog h3{
+    font-size: 12px;
+}
+#modal-add .btn-primary{
+    border-radius: 25px;
+    margin-left: -52px;
+}
+#modal-add .modal-dialog .left{
+    width: 180px;
+    margin-right: 10px;
+}
+#modal-add .right{
+    width: 750px;
+}
+#modal-add li{
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 10px 10px;
+    background-color:rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+#modal-add li:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+#modal-add .group-input{
+    position: relative;
+}
+#modal-add .group-body input{
+    width: 148px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+#modal-add .guan{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #999;
+    top: -8px;
+    right: -8px;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+}
+#modal-add .pic-page{
+   margin: 20px 0 20px -55px;
+}
+#modal-add .pic-page .current{
+    background-color: #008EE5;
+    color: #fff;
+}
+#modal-add .pic-page .btn{
+    padding: 0;
+    border-radius: 3px;
+    width: 20px;
+}
+#addmodal1{
+    display: block;
+}
+#addmodal2{
+    display: none;
+} 
+#addmodal2 .page-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+#addmodal2 .modal-title span{
+    color: #008EE5;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#addmodal2 .xiala{
+    position: relative;
+}
+#addmodal2 .xiala .down{
+    left: 369px;
+}
+
+#addmodal2 input{
+    width: 292px;
+    height: 30px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+#addmodal2 .last-row{
+    margin-left: 20px;
+}
+#addmodal2 .modal-body{
+    text-align: left;
+}
+#addmodal2 .btn-primary {
+    margin-left: 410px;
+}
+
+/* 图文导航 */
+.tuwen{
+    width: 50%;
+    height: 100%;
+    background-color: #eee;
+    padding-top: 15px;
+    margin-right: 10%;
+}
+.tuwen .row {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.tuwen .title{
+    margin: 0 15px 0 25px;
+}
+.tuwen .title i{
+    color: red;
+}
+.tuwen .btn-group .btn-primary{
+    border-radius: 3px;
+    line-height: 31px;
+    height: 31px;
+}
+/* 手机部分 */
+.phone{
+    position: relative;
+}
+.phone ul{
+    height: 80px;
+    width: 248px;
+    background-color: #fff;
+    position: absolute;
+    top: 272px;
+    left: 20px;
+    padding-left: 10px;
+}
+.phone ul li{
+    padding: 4px;
+    text-align: center;
+    float: left;
+}
+.phone ul li .pic{
+    height: 40px;
+    width: 40px;
+    background-color: #eee;
+}
+.phone ul li .title{
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/* 弹框2 */
+.modal2 .modal-dialog {
+    width: 600px;
+    margin: 200px auto;
+    position: relative;
+}
+.modal-close{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-bottom: 0;
+    right: 10px;
+    top: 10px;
+}
+.modal2 .modal-body{
+    text-align: left;
+    padding: 0;
+    position: relative;
+    height: 400px;
+    width: 600px;
+}
+.link-ul {
+    height: 400px;
+    width: 90px;
+    background-color: #eee;
+    text-align: center;
+}
+.link-ul li{
+    height: 39px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.modal2 .modal-body .link-right{
+    display: none;
+}
+.modal2 .modal-footer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+.modal2 .modal-body .link-right-box{
+    width: 510px;
+    height: 400px;
+    overflow: hidden;
+}
+.modal2 .modal-body .link-right{
+   width: 510px;
+   height: 400px;
+}
+.con1 p{
+    margin-top: 192px;
+    text-align: center;
+}
+.con1 button{
+   margin-top: 115px;
+   margin-left: 205px;
+}
+/* 链接页面 */
+.con2{
+    position: relative;
+}
+.con2 .search {
+    margin: 0 0 10px 10px;
+    height: 30px;
+    padding-top: 62px;
+}
+.con2 .search input{
+    height: 28px;
+    width: 432px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    border-right: 0;
+    margin-right: 0;
+    padding: 0 5px;
+}
+.con2 .search button{
+    width: 40px;
+    height: 30px;
+    background-color: #008EE5;
+    float: left;
+}
+.con2 .news{
+    width: 472px;
+    margin-left: 10px;
+    height: 50px;
+    line-height: 30px;
+}
+.con2 .news a{
+    height: 20px;
+    width: 472px;
+    margin: 10px 0;  
+    float: left; 
+    position: relative; 
+}
+.con2 .news span{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.con2 .fanye{
+    position: absolute;
+    height: 20px;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -60px;
+}
+/* 链接 */
+.con3{
+    padding-left: 10px;
+}
+.con3 .select-item input{
+    width: 401px;
+    line-height: 30px;
+    padding: 0 5px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+.con3 .select-item{
+    position: relative;
+    margin-top: 30px;
+    width: 401px;
+}
+.item-cat{
+    height: 470px;
+    display: none;
+}
+.cat-left{
+    height: 300px;
+    background-color: #eee;
+    width: 100px;
+    padding-top: 10px;
+}
+.cat-left ul li{
+    padding: 0 10px;
+    width: 80px;
+    line-height: 30px;
+    text-align: left;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.cat-right{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.cat-right ul{
+    width: 300px;
+    height: 300px;
+}
+.cat-right ul li{
+    padding: 0 15px;
+    width: 270px;
+    line-height: 20px;
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+.cat-right ul li i{
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+/* con4 */
+.con4 input{
+    width: 486px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 192px;
+    margin-left: 10px;
+}
+.con4 button{
+    margin-top: 115px;
+   margin-left: 205px;    
+}

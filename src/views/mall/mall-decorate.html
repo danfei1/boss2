@@ -1,0 +1,499 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" href="../../css/mall/mall-decorate.css">
+    <title>首页装修</title>
+</head>
+
+<body>
+    <div class="page page1" id="addLunBo">
+        <nav class="breadcrumb"> <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            商城
+            <span class="c-gray en">&gt;</span>
+            首页装修
+        </nav>
+        <div class="page-container">
+            <!-- 弹窗1 -->
+            <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-spanledby="myModalspan" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                确定删除?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn radius" data-dismiss="modal" aria-hidden="true">否</button>
+                            <button class="btn btn-primary">是</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 弹窗2 -->
+            <div id="modal2" class="modal fade modal2" tabindex="-1" role="dialog" aria-spanledby="myModalspan" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <a class="modal-close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        <div class="modal-body">
+                            <ul class="f-l link-ul">
+                                <li class="blue">
+                                    <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                    <div class="link-title">无</div>    
+                                </li>
+                                <li>
+                                    <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                    <div class="link-title">页面</div>    
+                                </li> 
+                                <li>
+                                    <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                    <div class="link-title">类目</div>    
+                                </li>                                   
+                                <li>
+                                    <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                    <div class="link-title">分类</div>    
+                                </li> 
+                                <li>
+                                    <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                    <div class="link-title">URL</div>    
+                                </li>                                                                                            
+                            </ul>  
+                            <div class="link-right-box f-l">
+                                <div class="link-right con1">
+                                    <p>此项表示不设置任何内容</p>
+                                    <button class="btn btn-primary radius">保存设置</button> 
+                                </div>
+                                <div class="link-right con2">
+                                    <div class="search">
+                                        <input type="text" placeholder="搜索页面" class="f-l">
+                                        <button class="btn btn-parimary f-l"><i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i></button>
+                                    </div>  
+                                    <div class="news">
+                                        <a href="#">六月出行大放送<span>></span></a>
+                                        <a href="#">六月出行大放送<span>></span></a>
+                                        <a href="#">六月出行大放送<span>></span></a>
+                                    </div>
+                                    <div class="fanye">
+                                        <div class="btn radius size-S"><</div>
+                                        <div class="btn radius size-S">1</div>
+                                        <div class="btn radius size-S">2</div>
+                                        <div class="btn radius size-S">...</div>
+                                        <div class="btn radius size-S">10</div>
+                                        <div class="btn radius size-S">></div>
+                                    </div>
+                                </div> 
+                                <div class="link-right con3">
+                                    <div class="select-item">
+                                        <input type="text"value="选择商品类目">
+                                        <div class="down"></div>
+                                        <div class="item-cat">
+                                            <div class="cat-left f-l">
+                                                <ul>
+                                                    <li>运动户外</li>
+                                                    <li>食品</li>
+                                                    <li>酒店旅游</li>
+                                                </ul>                    
+                                            </div>
+                                            <div class="cat-right f-l">
+                                                <ul>
+                                                    <li>运动户外<i>></i></li>
+                                                    <li>运动户外<i>></i></li>
+                                                    <li>运动户外<i>></i></li>
+                                                    <li>运动户外<i>></i></li>
+                                                    <li>运动户外<i>></i></li>
+                                                    <li>运动户外<i>></i></li>
+                                                    <li>运动户外<i>></i></li>
+                                                </ul>
+                                                <ul>
+                                                    <li>优先零食<i>></i></li>
+                                                    <li>茶饮酒水<i>></i></li>
+                                                    <li>滋补保健<i>></i></li>
+                                                    <li>粮油米面<i>></i></li>
+                                                    <li>水果<i>></i></li>
+                                                    <li>生鲜<i>></i></li>
+                                                    <li>进口食品<i>></i></li>
+                                                </ul> 
+                                                <ul>
+                                                    <li>酒店旅游<i>></i></li>
+                                                    <li>酒店旅游<i>></i></li>
+                                                    <li>酒店旅游<i>></i></li>
+                                                    <li>酒店旅游<i>></i></li>
+                                                </ul>                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>         
+                                <div class="link-right con3">
+                                    <div class="select-item">
+                                        <input type="text"value="选择商品分类">
+                                        <div class="down"></div>
+                                        <div class="item-cat">
+                                            <div class="cat-left f-l">
+                                                <ul>
+                                                    <li>手机数码</li>
+                                                    <li>美妆护肤</li>
+                                                    <li>医疗保健</li>
+                                                </ul>                    
+                                            </div>
+                                            <div class="cat-right f-l">
+                                                <ul>
+                                                    <li>手机<i>></i></li>
+                                                    <li>手机<i>></i></li>
+                                                    <li>手机<i>></i></li>
+                                                    <li>手机<i>></i></li>
+                                                    <li>手机<i>></i></li>
+                                                </ul>
+                                                <ul>
+                                                    <li>洁面<i>></i></li>
+                                                    <li>脸霜<i>></i></li>
+                                                    <li>面膜<i>></i></li>
+                                                    <li>香水<i>></i></li>
+                                                    <li>抗痘<i>></i></li>
+                                                    <li>口红<i>></i></li>
+                                                    <li>美甲<i>></i></li>
+                                                </ul> 
+                                                <ul>
+                                                    <li>医疗<i>></i></li>
+                                                    <li>医疗<i>></i></li>
+                                                    <li>医疗<i>></i></li>
+                                                    <li>医疗<i>></i></li>
+                                                    <li>医疗<i>></i></li>
+                                                </ul>                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="link-right con4">
+                                    <input type="text" placeholder="添加URL地址">
+                                    <button class="btn btn-primary radius">保存设置</button>
+                                </div>                                                                                      
+                            </div>   <!-- link-right-box end  -->
+                        </div>  <!-- modal-body end  -->
+                    </div> <!-- modal-content end  -->
+                </div> <!-- modal-dialog end  -->
+            </div><!-- modal2 end  -->
+
+            <div id="tab_demo" class="HuiTab">
+                <div class="tabBar clearfix">
+                    <span>轮播广告</span>
+                    <span>图文导航</span>
+                </div>
+                <div class="tabCon">
+                    <div class="search">
+                        <div class="text-l left">
+                            <button name="" id="" class="btn btn-primary" type="submit" onClick="addLunBo()">添加</button>
+                        </div>
+                    </div>
+                    <div class="tit">管理商城首页轮播广告图，最多可添加10个广告图</div>
+                    <div class="mt-10">
+                        <table class="table table-border table-bg table-hover table-responsive table-boder-self">
+                            <thead>
+                                <tr class="text-c">
+                                    <th width="30">排序</th>
+                                    <th width="80">背景图</th>
+                                    <th width="200">标题</th>
+                                    <th width="50">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-c">
+                                    <td>
+                                        <div class="dot"></div>
+                                        <div class="btn radius">1</div>
+                                    </td>
+                                    <td>
+                                        <img src="../../../temp/200x150.jpg" alt=""></td>
+                                    <td>圣诞狂欢盛宴，上百款精品总不停</td>
+                                    <td class="f-14 td-manage">
+                                        <div class="btn radius size-S bthover">编辑</div>
+                                        <div class="btn radius size-S bthover"  onClick="modaldemo()">删除</div>
+                                    </td>
+                                </tr>
+                                <tr class="text-c">
+                                    <td>
+                                        <div class="dot"></div>
+                                        <div class="btn radius">2</div>
+                                    </td>
+                                    <td>
+                                        <img src="../../../temp/200x150.jpg" alt=""></td>
+                                    <td>圣诞狂欢盛宴，上百款精品总不停</td>
+                                    <td class="f-14 td-manage">
+                                        <div class="btn radius size-S bthover">编辑</div>
+                                        <div class="btn radius size-S bthover" onClick="modaldemo()">删除</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tabCon navigation">
+                    <div class="tit">管理商城首页图文导航，最多可添加20个</div>
+                    <div class="container-fluid">
+                        <div class="content-left tuwen f-l">
+                            <div class="row cl">
+                                <div class="title f-l" for=""><i>*&nbsp</i>
+                                    样式设置
+                                </div>
+                                <div class="btn-group f-l">
+                                    <span class="btn btn-primary radius">固定</span>
+                                    <span class="btn btn-default radius">左右滑动</span>
+                                </div>
+                            </div>
+                            <div class="row cl range">
+                                <div class="title f-l" for=""> <i>*&nbsp</i>
+                                    每行数量
+                                </div>
+                                <div class="slider f-l">
+                                    <div id="bl">
+                                        <div  style="width: 160px;position: relative;float: left;">
+                                            <div id="move">
+                                                <div class="bl-value">5</div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>  
+                            <div class="row cl">
+                                <div class="title f-l" for="">
+                                    <i>*&nbsp</i>
+                                    标签
+                                </div>
+                                <div class="f-l tag">
+                                    <ul>
+                                        <li>
+                                            美妆
+                                            <div class="arrow">×</div>
+                                        </li>
+                                        <li>
+                                            导航2
+                                            <div class="arrow">×</div>
+                                        </li> 
+                                        <li>
+                                            导航3
+                                            <div class="arrow">×</div>
+                                        </li>  
+                                        <li>
+                                            导航4
+                                            <div class="arrow">×</div>
+                                        </li>
+                                        <li>
+                                            导航5
+                                            <div class="arrow">×</div>
+                                        </li>                                                                                        
+                                    </ul>                
+                                    <div class="btn btn-default radius f-l">+ 新增</div>
+                                    <span class="f-l gray">拖动可排序</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="title" for="">
+                                    <i>*&nbsp</i>
+                                    添加图片
+                                    <span class="gray">建议尺寸100*100px</span>
+                                </div>
+                                <div class="add1" onclick="modaladd()">+</div>
+                            </div>
+                            <div class="row cl nav-name">
+                                <div class="title f-l" for="">
+                                    <i>*&nbsp</i>
+                                    导航名称
+                                </div>
+                                <input type="text">                        
+                                <span class="gray">最多可输入四个文字</span>
+                            </div>
+                            <div class="row nav-link">
+                                <div class="title f-l" for="">
+                                    <i>*&nbsp</i>
+                                    链接
+                                </div>
+                                <input type="text" placeholder="链接到">
+                                <div class="arrow-right" onclick="showModal2()"></div>                                   
+                                
+                            </div>
+                            <button class="btn btn-default radius btn-set">保存设置</button>     
+                        </div>
+                        <div class= "phone f-l">
+                            <img src="../../images/phone.png" height="611" width="298" alt="">
+                            <ul>
+                                <li>
+                                    <div class="pic"></div>
+                                    <div class="title">美妆</div>
+                                </li>
+                                <li>
+                                    <div class="pic"></div>
+                                    <div class="title">导航2</div>
+                                </li>                                
+                                <li>
+                                    <div class="pic"></div>
+                                    <div class="title">导航3</div>
+                                </li>  
+                                <li>
+                                    <div class="pic"></div>
+                                    <div class="title">导航4</div>
+                                </li> 
+                                <li>
+                                    <div class="pic"></div>
+                                    <div class="title">导航5</div>
+                                </li>                                                                                 
+                            </ul>
+                        </div>
+                    </div>                                         
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page page2" id="addpage">
+        <nav class="breadcrumb"> <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            商城
+            <span class="c-gray en">&gt;</span>
+            首页装修
+            <span class="c-gray en">&gt;</span>
+            添加
+        </nav>
+        <div class="page-container">
+            <div id="modal-add" class="modal fade" tabindex="-1" role="dialog" aria-spanledby="myModalspan" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius" id="addmodal1">
+                        <div class="modal-header">
+                            <h3 class="modal-title">我的文件 / 图片</h3>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <div class="left f-l">
+                                <button class="btn btn-primary" onClick="addModal()">上传</button>
+                                <div class="head cl">
+                                    <div class="f-l">未分组</div>
+                                    <div class="f-r">20</div>
+                                </div>
+                                <div class="group">
+                                    <div class="group-body">
+                                        <div class="group-row cl">
+                                            <div class="f-l">运动</div>
+                                            <div class="f-r">1</div>
+                                        </div>
+                                        <div class="group-input">
+                                            <input type="text">
+                                            <div class="guan">×</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right f-l">
+                                <ul class="cl">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div class="pic-page">
+                                    <div class="btn size-MINI"><</div>
+                                    <div class="btn size-MINI current">1</div>
+                                    <div class="btn size-MINI">2</div>
+                                    <div class="btn size-MINI">></div>
+                                </div>
+                                <button class="btn btn-primary" onClick="addPicFinsh()">确定</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-content radius" id="addmodal2">
+                        <div class="modal-header">
+                            <div class="modal-title"><span onClick="addModalFinsh()"><</span>我的文件 / 图片 / 上传图片</div>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <div class="page-container">
+                                <div class="row xiala">
+                                    <i>*</i>
+                                    <span>上传分组</span>
+                                    <input type="text" placeholder="未分组">
+                                    <div class="down"></div>
+                                </div>
+                                <div class="row">
+                                    <i>&nbsp;</i>
+                                    <span>网络图片</span>
+                                    <input type="text" placeholder="请添加网络图片地址"></div>
+                                <div class="row">
+                                    <i>&nbsp;</i>
+                                    <span>本地图片</span>
+                                </div>
+                                <div class="row last-row">
+                                    <div class="add1">+</div>
+                                    <span>支持bmp、jpg、png、tif、gif</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary last-confirm" onClick="addModalFinsh()">确认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+                   
+            <div class="set-pic">
+                <div class="row"> <i>*</i>
+                    <span>背景图片</span>
+                    <span class="f-12 gray">尺寸750px*340px</span>
+                </div>
+                <div class="row">
+                    <div class="add" onClick="modaladd()">+</div>
+                </div>
+                <div class="row">
+                    <i>*</i>
+                    <span>标题</span>
+                    <input type="text" class="inpt-title">    
+                    <span class="f-12 gray">最多可输入20个文字</span>
+                </div>
+                <div class="row row-link">
+                    <i>*</i>
+                    <span>链接</span>
+                    <input type="text" class="inpt-link" placeholder="链接到">
+                    <div class="arrow">></div>
+                </div>                
+            </div>
+            <div class="set-btn">
+                <div class="btn" onClick="addFinish()">取消</div>
+                <div class="btn btn-default set" onClick="addFinish()">保存设置</div>  
+            </div>
+        </div>
+    </div>
+  
+    <!--_footer 作为公共模版分离出去-->
+    <script type="text/javascript" src="../../../lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../lib/layer/2.4/layer.js"></script>
+    <script type="text/javascript" src="../../../static/h-ui/js/H-ui.min.js"> </script>
+    <script type="text/javascript" src="../../../static/h-ui.admin/js/H-ui.admin.js"></script>
+    <script type="text/javascript" src="../../js/mall/mall-decorate.js"></script>
+</body>
+</html>

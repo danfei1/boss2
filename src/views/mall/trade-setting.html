@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../../static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="../../../lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<link rel="stylesheet" href="../../css/mall/trade-setting.css">
+<title>交易设置</title>
+</head>
+<body>
+    <nav class="breadcrumb"> <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            商城
+            <span class="c-gray en">&gt;</span>
+            交易设置
+    </nav>
+    <div class="page-container">
+        <!-- 保存成功 -->
+        <div class="message set-success">
+            <i class="Hui-iconfont">&#xe67f;</i>
+            <span>保存成功！</span>
+        </div>
+        <!-- 保存成功 -->
+        <div class="message set-fail">
+            <i class="Hui-iconfont">&#xe67f;</i>
+            <span>保存失败，请稍后再试！</span>
+        </div> 
+
+        <div class="set-pic">
+            <div class="row cl">
+                <i class="f-l">*&nbsp;</i>
+                <span class="f-l">订单设置</span>
+                <div class="f-l">
+                    <span>拍下未付款订单</span>
+                    <input class="entry" type="text" placeholder="30">
+                    <span>分钟内未付款，系统自动取消订单。</span><br>
+                    <span>发货后</span>
+                    <input class="entry" type="text" placeholder="7">
+                    <span>天，自动确认收货。</span>                      
+                </div>  
+            </div>
+        </div>
+        <div class="set-pic">
+            <div class="row cl">
+                <i class="f-l">*&nbsp;</i>
+                <span class="f-l">配送设置</span>
+                <div class="f-l">
+                    <span>设置售后商品寄回地址</span> <br>
+                    <input type="text" placeholder="收货人" class="ershi"><span class="gray">最多可输入20个文字</span><br>
+                    <input type="text" placeholder="联系电话" class="shiyi"><span class="gray">输入11位数联系电话</span><br>
+                    <input type="text" placeholder="收货地址" class="liushi"><span class="gray">最多可输入60个文字</span><br>
+                    <input type="text" placeholder="备注说明" class="ershi"><span class="gray">最多可输入20个文字</span>
+                </div>
+            </div>
+        </div>   
+
+        <div class="set-pic">
+            <div class="row cl">
+                <i class="f-l">*&nbsp;</i>
+                <span class="f-l">运费设置</span>
+                <div class="f-l skin-minimal">
+                    <span>基础运费</span>
+                    <input class="entry" type="text" placeholder="0.01">
+                    <span>元</span>
+                    <span class="check-box">
+                        <input type="checkbox" id="checkbox-1">
+                        <label for="checkbox-1">设为包邮</label>
+                    </span>
+                    <br>
+                    <span>每增多</span>
+                    <input class="entry" type="text" placeholder="1">
+                    <span>件商品，基础运费增加</span>
+                    <input class="entry" type="text" placeholder="0.00">
+                    <span>元</span>
+                </div>                       
+            </div>     
+        </div>     
+        <div class="set-btn">
+            <div class="btn" onClick="saveSet()">保存设置</div>  
+        </div>
+    </div>
+<script type="text/javascript" src="../../../lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="../../../lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="../../../static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="../../../static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="../../../lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="../../../lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="../../../lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="../../js/mall/trade-setting.js"></script> 
+</body>
+</html>

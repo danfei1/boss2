@@ -1,0 +1,297 @@
+input,button{
+    height: 30px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.blue{
+    color: #008EE5;
+}
+/*  */
+.search {
+    height: 35px;
+}
+.btn-primary {
+    background-color: #008EE5;
+    font-size: 14px;
+    color: #fff;
+    padding:0 25px;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.table .text-c th{
+    background-color: #F8F8F8;
+}
+.table tbody tr{
+    height: 60px;
+}
+
+.modal-header{
+    border: 0;
+}
+.modal-header .close {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+/* 页码部分 */
+.footer ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -222px;
+}
+.footer ul li{
+    height: 24px;
+    padding: 0 8px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+.footer ul li input{
+    height: 24px;
+    border: 0;
+    width: 15px;
+}
+.current{
+    background-color: #008EE5;
+    color: #fff;
+}
+.footer ul li.no-border{
+    border: 0;
+}
+
+/* 推广弹出框 */
+.extension .modal-dialog {
+   width: 480px;
+   margin-top: 300px;
+}
+.extension .modal-body{
+    height: 130px;
+    text-align: left;
+}
+.extension .modal-body .btn{
+    display: block;
+    width: 120px;
+    height: 30px;
+}
+.extension .modal-body .btn-default{
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.extension .modal-right{
+    margin-left: 10px;
+}
+.extension .modal-right img{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+}
+
+/* 删除弹框 */
+.modal-open .modal {
+    overflow-y: hidden;
+}        
+.modal-dialog {
+    width: 300px;
+    margin: 300px auto;
+}
+.modal-header {
+    border-bottom: 0;
+}
+.modal-header .close {
+    right: 10px;
+    top: 0px;
+}
+.modal-body{
+    text-align: center;
+}
+.modal-footer {
+    text-align: left;
+    background-color: #fff;
+    border-top: 0;
+    padding-left: 66px;
+}
+.modal-footer .btn{
+   width: 80px;
+}
+.modal-footer .btn-primary{
+    border-radius: 4px;
+} 
+
+/* page页设置 */
+.page2{
+    display: none;
+}
+.page1{
+    display: block;
+}
+/* 添加页 */
+.page2 .page-container .row{
+    margin: 20px 0;
+}
+.page2 .page-container input{
+    margin-right: 10px;
+}
+.page2 .page-container i{
+    color: red;
+    margin-right: 10px;
+}
+.page2 .page-container span{
+    margin-right: 20px;
+}        
+.page2 .set{
+    border-radius: 25px;
+}
+.add{
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 70px;
+    border: 1px dashed #ccc;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* 搜索部分 */
+.search input{
+    width: 240px;
+}
+
+
+/* 添加部分 */
+.set-pic{
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+}
+.page2 .page-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.page2 .page-container .row{
+    margin: 20px 0;
+    line-height: 30px;
+}
+.page2 .page-container input{
+    margin-right: 10px;
+}
+.page2 .page-container i{
+    color: red;
+    margin-right: 10px;
+}
+.page2 .page-container span{
+    margin-right: 10px;
+}        
+.page2 .add{
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    color: #ccc;
+    line-height: 70px;
+    border: 1px dashed #ccc;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.gray{
+    color: #aaa;
+    font-size: 12px;
+} 
+.set-btn{
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 410px;
+}
+.set-btn .btn{
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.set-btn .set{
+    color: #fff;
+}
+
+/* tab */
+.HuiTab {
+    width: 213px;
+}
+.tabBar {
+    border: 0;
+    margin-right: 10px;
+}
+.page2 .tabBar span{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 0;    
+}
+.page2 .tabBar span:nth-child(1){
+    border-right: 0;
+}
+.page2 .tabBar span:nth-child(2){
+    border-left: 0;
+}
+
+.tabBar span.current {
+    background-color: #008EE5;
+    color: #fff;
+}
+.tabCon {
+    padding-top:20px;
+    position: relative;
+}
+.tabCon button{
+    width: 322px;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* 下拉内容 */
+.select-content {
+    width: 320px;
+    height: 200px;
+    border: 1px solid #aaa;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+.select-left{
+   width: 130px;
+   height: 200px;
+   background-color: #ccc; 
+   cursor: pointer;
+}
+.select-left li{
+    padding: 0 10px;
+    margin: 5px;
+}
+.select-right{
+    width: 190px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.select-right ul{
+    width: 190px;
+    height: 200px;
+    background-color: #fff;    
+}
+.select-right ul li{
+    padding: 0 10px;
+    margin: 5px;    
+}

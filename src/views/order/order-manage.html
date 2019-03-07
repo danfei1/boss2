@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="../../../lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/h-ui.admin/css/style.css" />
+    <link rel="stylesheet" href="../../css/order/order-manage.css">
+    <title>商品管理</title>
+</head>
+
+<body>
+    <div class="page page1">
+        <nav class="breadcrumb"> <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            商品
+            <span class="c-gray en">&gt;</span>
+            商品管理
+        </nav>
+        <div class="page-container">
+            <!-- 删除弹窗 -->
+            <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-spanledby="myModalspan" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>
+                                确定删除?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn radius" data-dismiss="modal" aria-hidden="true">否</button>
+                            <button class="btn btn-primary">是</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tab_demo" class="HuiTab">
+                <div class="tabBar clearfix">
+                    <span>全部</span>
+                    <span>待付款</span>
+                    <span>待发货</span>
+                    <span>已发货</span>
+                    <span>已完成</span>
+                    <span>已取消</span>
+                </div>
+                <div class="tabCon">
+                    <div class="search cl">
+                        <div class="text-l f-l">
+                            <input type="text" placeholder="订单号">
+                            <input type="text">
+                        </div>
+                        <div class="price f-l">
+                            <span>下单时间</span>
+                        </div>
+                        <div class="f-l">
+                            <span>订单类型</span>
+                            <input type="text" placeholder="全部">
+                        </div>
+						<div class="f-l">
+                            <span>订单来源</span>
+                            <input type="text" placeholder="全部">
+                        </div> 
+						<div class="f-l">
+                            <span>订单状态</span>
+                            <input type="text" placeholder="全部">
+                        </div>                                                
+                        <div class="screen f-l">
+                            <button name="" id="" class="btn btn-primary">筛选</button>
+                        </div>                        
+                    </div>
+                    <div class="mt-10">
+                        <table class="table table-border table-bg table-hover table-responsive table-boder-self">
+                            <thead>
+                                <tr class="text-c">
+                                    <th width="50">商品名称</th>
+                                    <th width="50">单价/数量</th>
+                                    <th width="50">商品编号</th>
+                                    <th width="50">买家</th>
+                                    <th width="50">订单类型</th>
+                                    <th width="50">订单来源</th>
+                                    <th width="50">订单状态</th>
+                                    <th width="50">实付金额</th>
+                                    <th width="50">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                            		<td>
+                            			<span>订单号：</span>
+                            			<span>SCDD201812241139350227407420598</span>
+                            		</td>
+                            		<td>
+										<span>下单时间：</span>
+                            			<span>2018-12-12 09:25:56</span>	
+                            		</td>
+                            	</tr>
+                                <tr class="text-c">
+                                    <td>
+                                        <img class="f-l" src="../../images/200x150.jpg" height="157" width="210" alt="">
+                                        <div class="product-name f-l">
+                                        	<div>银杏酒 银杏贡酒45度 500ml 4瓶装</div>
+                                            <div>规格：45度500ml | 4瓶装</div>
+                                        </div>
+                                    </td>
+ 									<td>							
+                                        积分：3000
+                                        金额：50.00 ×1
+                                    </td>                                    
+                                    <td>E00266866323</td>
+                                    <td>超超 18666012450</td>
+                                    <td>普通订单分销订单礼品订单</td>
+                                    <td>瑜伽健康公众号</td>
+                                    <td>待付款</td>
+                                    <td>积分：4000 金额：200.00</td>
+                                    <td class="f-14 td-manage">
+                                       	<div class="btn">发货</div>
+                                       	<div class="btn">详情</div>
+                                    </td>
+                                </tr>
+                                                           
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="footer">
+                    	<div class="export"><i class="Hui-iconfont">&#xe67f;</i>批量导出</div>
+                        <ul>
+                            <li><</li>
+                            <li class="current">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li class="no-border">...</li>
+                            <li>50</li>
+                            <li>></li>
+                            <li>10/页 <i class="Hui-iconfont">&#xe67f;</i></li>
+                            <li class="no-border">Goto</li>
+                            <li><input type="text" placeholder="8"></li>
+                            <li class="no-border">总数85</li>
+                        </ul>
+                    </div>
+                </div>                   
+            </div>
+        </div>
+    </div>
+  
+    <script type="text/javascript" src="../../../lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/order/order-manage.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="Bookmark" href="/favicon.ico" >
+<link rel="Shortcut Icon" href="/favicon.ico" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>现联瑜伽管理后台</title>
+<meta name="keywords" content="现联瑜伽">
+<meta name="description" content="现联瑜伽，瑜伽平台">
+</head>
+<body>
+<header class="navbar-wrapper">
+	<div class="navbar navbar-fixed-top">
+		<div class="container-fluid cl"> <a id="xu" class="logo navbar-logo f-l mr-10 hidden-xs" href="/aboutHui.shtml"><i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>现联瑜伽管理后台</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a> 
+			<span class="logo navbar-slogan f-l mr-10 hidden-xs">v2.0</span> 
+			<a aria-hidden="false" class="Hui-iconfont visible-xs" href="javascript:;">&#xe62a;</a>
+			<nav class="nav navbar-nav header-nav">
+				<ul class="cl">
+					<li><a href="#">通用管理</a></li>
+					<li><a href="#">积分商城</a></li>
+					<li><a href="#">瑜伽学院</a></li>
+					<li><a href="#">爱的瑜伽</a></li>		
+					<li><a href="#">瑜伽前线</a></li>
+					<li><a href="#">朕专用</a></li>							
+				</li>
+			</ul>
+		</nav>
+		<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
+			<ul class="cl">
+				<li class="admin">
+					<a href="#"><i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>admin 欢迎回来！</a>
+				</li>
+				<li class="admin">
+					<a href="#"><i class="Hui-iconfont" style="font-size:16px">&#xe68a;</i>退出</a>
+				</li>				
+			</ul>
+		</nav>
+	</div>
+</div>
+</header>
+<aside class="Hui-aside">
+	<div class="menu_dropdown bk_2">
+		<dl id="menu-mall">
+            <dt><i class="Hui-iconfont">&#xe616;</i> 商城<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd>
+                <ul>
+                    <li><a data-href="./src/views/mall/mall-decorate.html" data-title="首页装修" href="javascript:void(0)">首页装修</a></li>
+                    <li><a data-href="./src/views/mall/page-manage.html" data-title="页面管理" href="javascript:void(0)">页面管理</a></li>
+                    <li><a data-href="./src/views/mall/integral-setting.html" data-title="积分设置" href="javascript:void(0)">积分设置</a></li>
+                    <li><a data-href="./src/views/mall/trade-setting.html" data-title="交易设置" href="javascript:void(0)">交易设置</a></li>
+                </ul>
+            </dd>
+    	</dl>
+		<dl id="menu-goods">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 商品<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="./src/views/goods/item-cat.html" data-title="商品类目" href="javascript:void(0)">商品类目</a></li>
+					<li><a data-href="./src/views/goods/goods-category.html" data-title="商品分类" href="javascript:void(0)">商品分类</a></li>
+					<li><a data-href="./src/views/goods/goods-manage.html" data-title="商品管理" href="javascript:void(0)">商品管理</a></li>				
+				</ul>					
+			</dd>
+		</dl>
+		<dl id="menu-order">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 订单<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="./src/views/order/order-overview.html" data-title="订单概况" href="javascript:void(0)">订单概况</a></li>
+					<li><a data-href="./src/views/order/order-manage.html" data-title="订单管理" href="javascript:void(0)">订单管理</a></li>
+					<li><a data-href="./src/views/order/back-sale.html" data-title="退换售后" href="javascript:void(0)">退换售后</a></li>
+					<li><a data-href="./src/views/goods/review-manage.html" data-title="评价管理" href="javascript:void(0)">评价管理</a></li>				
+				</ul>					
+			</dd>
+		</dl>		
+</div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<section class="Hui-article-box">
+	<div id="Hui-tabNav" class="Hui-tabNav hidden-xs">
+		<div class="Hui-tabNav-wp">
+			<ul id="min_title_list" class="acrossTab cl">
+				<li class="active">
+					<span title="积分商城" data-href="welcome.html">积分商城</span>
+					<em></em></li>
+			</ul>
+	</div>
+		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
+</div>
+	<div id="iframe_box" class="Hui-article">
+		<div class="show_iframe">
+			<div style="display:none" class="loading"></div>
+			<iframe scrolling="yes" frameborder="0" src="welcome.html"></iframe>
+	</div>
+</div>
+</section>
+
+<div class="contextMenu" id="Huiadminmenu">
+	<ul>
+		<li id="closethis">关闭当前 </li>
+		<li id="closeall">关闭全部 </li>
+</ul>
+</div>
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/jquery.contextmenu/jquery.contextmenu.r2.js"></script>
+
+<script type="text/javascript" src="./src/js/index.js"></script> 
+
+
+</body>
+</html>

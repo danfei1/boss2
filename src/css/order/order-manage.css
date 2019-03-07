@@ -1,0 +1,131 @@
+.btn-primary {
+        background-color: #008EE5;
+        font-size: 14px;
+        color: #fff;
+        padding:0 25px;
+        border-radius: 5px;
+        height: 30px;
+        line-height: 30px;
+}
+/* 表格 */
+table img {
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+.table tbody tr{
+    height: 100px;
+}
+.table .text-c th{
+    background-color: #F8F8F8;
+}
+.table tbody img{
+    margin: auto;
+}
+td{
+    position: relative;
+}
+td .dot{
+    position: absolute;
+    width: 18px;
+    height: 54px;
+    left: 10px;
+    top: 50%;
+    margin-top: -27px;
+    background: url("../../images/dot.jpg") no-repeat;
+}
+.tabBar {
+            border: none;
+        }
+.tabBar span{
+    background-color: #fff;
+}
+
+.tabBar span.current {
+    border-bottom: 3px solid #008EE5;
+    background-color: #fff;
+    color: #008EE5;
+}
+.tabCon {
+    padding-top:20px;
+}
+.tabCon .tit{
+    padding-top: 10px;
+}
+
+/* 删除弹出框 */
+.modal-open .modal {
+    overflow-y: hidden;
+}        
+.modal-dialog {
+    width: 300px;
+    margin: 300px auto;
+}
+#modal-demo .modal-header {
+    border-bottom: 0;
+}
+.modal-header .close {
+    right: 10px;
+    top: 0px;
+}
+.modal-body{
+    text-align: center;
+}
+.modal-footer {
+    text-align: left;
+    background-color: #fff;
+    border-top: 0;
+    padding-left: 66px;
+}
+.modal-footer .btn{
+   width: 80px;
+}
+.modal-footer .btn-primary{
+    border-radius: 4px;
+} 
+
+/* 页码部分 */
+.footer ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -222px;
+}
+.footer .export{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    padding: 0 10px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.footer ul li{
+    height: 24px;
+    padding: 0 8px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+.footer ul li input{
+    height: 24px;
+    border: 0;
+    width: 15px;
+}
+.current{
+    background-color: #008EE5;
+    color: #fff;
+}
+.footer ul li.no-border{
+    border: 0;
+}
+
+.page1{
+    display: block;
+}

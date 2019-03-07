@@ -1,0 +1,87 @@
+input,button{
+    height: 30px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.gary{
+	color: #aaa;
+	font-size: 12px;
+}
+
+.set-pic{
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.page-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.page-container .row{
+    margin: 20px 0;
+    line-height: 40px;
+}
+.page-container input{
+    margin-right: 10px;
+}
+.page-container i{
+    color: red;
+    margin-right: 10px;
+}
+.page-container span{
+    margin-right: 10px;
+}  
+.row input.entry{
+	width: 36px;
+	text-align: center;
+}
+.ershi{
+	width: 300px;
+} 
+.liushi{
+	width: 400px;
+} 
+.shiyi{
+	width: 110px;
+}
+
+.check-box{
+	line-height: 30px;
+	margin-left: 10px;`
+}
+
+  /*  */
+.set-btn{
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 426px;
+}
+.set-btn .btn{
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 20px;
+    color: #fff;
+    background-color: #008EE5;
+}
+
+/* 消息弹出 */
+.message{
+    line-height: 50px;
+    padding: 0 10px;
+    background-color: #eee;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -25px;
+    display: none;
+
+}
+.message i{
+    margin-right: 10px;
+}
